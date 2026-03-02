@@ -213,33 +213,3 @@ Example:
 ```gitignore
 serviceAccountKey.json
 ```
-
-## Optional improvements you can add later
-
-You can enhance the export script to:
-
-- include the `events` subcollection
-- export only selected fields
-- sort questions by `questionNumber`
-- color-code correct vs incorrect answers
-- apply filters to the question table
-- add a summary sheet across all sessions
-
-## Recommended workflow
-
-1. Keep the export script in a separate utility folder
-2. Run the script whenever you need a fresh export
-3. Open the generated workbook in Excel
-4. If scrolling feels odd, unfreeze panes
-5. Save a copy if you want to share the file without rerunning the script
-
-## Summary
-
-This export setup gives you a clean way to convert your Firestore data into Excel:
-
-- one workbook
-- one sheet per session
-- session details at the top
-- all related questions below
-
-It works well for reviewing quiz/session data in a readable, shareable format.
